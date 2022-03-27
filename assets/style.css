@@ -1,0 +1,189 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+
+    --header: #00B4D8;
+    --body: #373737;
+    --back: #EFEFEF;
+    --fontColor: #FAEDF0;
+    --fontText: #3A3845;
+    --wrong: #b3253a;
+    --right: #18ca7a;
+    
+}
+
+body{
+
+    width: 100%;
+    min-height: 100vh;
+
+    background: var(--body);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.container{
+
+
+    background: var(--back);
+    border-radius: 10px;
+
+    
+    color: var(--fontColor);
+    box-shadow:  0 0 5px rgba(0, 0, 0, 0.336);
+
+    width: 400px;
+    max-width: 100%;
+
+    overflow: clip;
+}
+
+label{
+
+    color: var(--fontText);
+}
+.header{
+
+    background: var(--header);
+    padding: 20px;
+
+    text-align: center;
+}
+
+.form{
+
+    padding: 1em;
+}
+
+.form-control{
+
+    /* margin-bottom: 10px; */
+    /* margin-bottom: 1em;
+    padding-bottom: 1em; */
+    position: relative;
+}
+
+.form-control label{
+
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input{
+
+    border: 2px solid var(--fontColor);
+    border-radius: 5px;
+    display: block;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+
+.form-control i{
+
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    visibility: hidden;
+}
+
+
+
+.form-control small{
+
+    /* position: absolute; */
+    top: 0;
+    right: 0;
+    visibility: hidden;
+}
+
+button{
+    
+    background: var(--header);
+    color: var(--fontColor);
+    border-radius: 10px;
+    
+
+    width: 100%;
+
+    font-size: 14px;
+
+    padding: 1em;
+    margin-top: 1em;
+
+    cursor: pointer;
+
+    border: 0;
+
+
+
+}
+
+
+/* error and success*/
+
+ .form-control.success input{
+
+    border-color: var(--right);
+}
+
+ .form-control.erro input{
+
+    border-color: var(--wrong);
+}
+
+
+
+ .form-control.erro i.erro{
+
+    visibility: visible;
+    color: var(--wrong);
+    
+} 
+  .form-control.success i.check{
+
+    visibility: visible;
+    color: var(--right);
+    
+} 
+
+
+  .form-control.erro small{
+
+    visibility: visible;
+    color: var(--wrong);
+    
+} 
+
+
+@media screen and (max-width: 48em){
+
+    
+.container{
+
+
+    background: var(--back);
+    border-radius: 10px;
+
+    
+    color: var(--fontColor);
+    box-shadow:  0 0 5px rgba(0, 0, 0, 0.336);
+
+    width: 100%;
+    max-width: 100%;
+    
+
+    overflow: clip;
+}
+
+    
+}
